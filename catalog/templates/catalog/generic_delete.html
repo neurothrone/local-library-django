@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Delete {{ type|title }}</h1>
+    <!-- object will use __str__() if defined -->
+    <p>Are you sure you want to delete the {{ type }}: {{ object }}?</p>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Yes, delete.">
+    </form>
+{% endblock %}

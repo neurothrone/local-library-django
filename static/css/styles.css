@@ -1,0 +1,13 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar {
+    background-color: #0f0f0f;
+}
+
+.main {
+    background-color: burlywood;
+}
