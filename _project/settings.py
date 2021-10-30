@@ -26,11 +26,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # DEBUG = True
 
 # Read SECRET_KEY from an environment variable
-# SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "^8m9#n^eu0le=5z@n_!5^5q=x-=t-si+*j9^vq0*uy_y_emz83")
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "^8m9#n^eu0le=5z@n_!5^5q=x-=t-si+*j9^vq0*uy_y_emz83")
 
 # Read secret key from a file
-with open(BASE_DIR / ".env") as file_in:
-    SECRET_KEY = file_in.read().strip()
+# with open(BASE_DIR / ".env") as file_in:
+#     SECRET_KEY = file_in.read().strip()
 
 DEBUG = os.environ.get("DJANGO_DEBUG", "") != "False"
 
